@@ -4,6 +4,49 @@
 	<title></title>
 </head>
 <body>
+	<script>
+		// Math1
+		function zero_neg(arr){
+			for(let i=0; i<arr.length;i++){
+				if(arr[i]<0){
+					return false;
+				}
+			}
+			return true;
+		}
 
+		// Math2	
+		function is_even(num){
+			if(num%2==0){
+				return true;
+			}
+			return false;
+		}
+
+		// Math3
+		function how_many_even(arr){
+			let tracker=0;
+			for(let i=0; i<arr.length; i++){
+				if(arr[i]%2==0){
+					tracker++;
+				}
+			}
+			return tracker
+		}
+
+		// Math4
+		function create_dummy_arr(n) {
+			let arr=[];
+			for(let i=0; i<n;i++){
+				arr.push(Math.floor(Math.random()* 9));
+			}
+			return arr;
+		}
+
+		// Math5
+		function random_choice(arr){
+			return arr[Math.floor(Math.random() * arr.length)];
+		}
+	</script>
 </body>
 </html>
